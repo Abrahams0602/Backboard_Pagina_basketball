@@ -33,51 +33,59 @@
         </nav>
     </header>
     <main>
-        <section class="buscarJugadores">
+        <section class="buscarJugadores animar-oculto">
             <label for="jugadores"></label>                                                 <!--BUSCAR jUGADOR-->
             <input type="text" id="jugadores" name="jugadores" required placeholder= "Buscar un jugador...">
-            <select name="jugadorPorEquipo" id="jugadorPorEquipo">                   <!--OPCIONES DEPLEGABLES FJUGADOR POR EQUIPO-->
-                <option value="">Boston Celtics</option>
-                <option value="">New Jersey Nets</option>
-                <option value="">New York Knicks</option>
-                <option value="">Philadelphia 76ers</option>
-                <option value="">Toronto Raptors</option>
-                <option value="">Chicago Bulls</option>
-                <option value="">Cleveland Cavaliers</option>
-                <option value="">Detroit Pistons</option>
-                <option value="">Indiana Pacers</option>
-                <option value="">Milwaukee Bucks</option>
-                <option value="">Atlanta Hawks</option>
-                <option value="">Charlotte Hornets</option>
-                <option value="">Miami Heat</option>
-                <option value="">Orlando Magic</option>
-                <option value="">Washington Wizards</option>
-                <option value="">Denver Nuggets</option>
-                <option value="">Minnesota Timberwolves</option>
-                <option value="">Oklahoma City Thunder</option>
-                <option value="">Portland Trail Blazers</option>
-                <option value="">Utah Jazz</option>
-                <option value="">Golden State Warriors</option>
-                <option value="">Los Angeles Clippers</option>
-                <option value="">Los Angeles Lakers</option>
-                <option value="">Phoenix Suns</option>
-                <option value="">Sacramento Kings</option>
-                <option value="">Dallas Mavericks</option>
-                <option value="">Houston Rockets</option>
-                <option value="">Memphis Grizzlies</option>
-                <option value="">New Orleans Pelicans</option>
-                <option value="">San Antonio Spurs</option>
+            <select name="jugadorPorEquipo" id="jugadorPorEquipo">
+                <option value="">Selecciona un Equipo</option>
+                <option value="1">Atlanta Hawks</option>
+                <option value="2">Boston Celtics</option>
+                <option value="3">Brooklyn Nets</option>
+                <option value="4">Charlotte Hornets</option>
+                <option value="5">Chicago Bulls</option>
+                <option value="6">Cleveland Cavaliers</option>
+                <option value="7">Dallas Mavericks</option>
+                <option value="8">Denver Nuggets</option>
+                <option value="9">Detroit Pistons</option>
+                <option value="10">Golden State Warriors</option>
+                <option value="11">Houston Rockets</option>
+                <option value="12">Indiana Pacers</option>
+                <option value="13">LA Clippers</option>
+                <option value="14">Los Angeles Lakers</option>
+                <option value="15">Memphis Grizzlies</option>
+                <option value="16">Miami Heat</option>
+                <option value="17">Milwaukee Bucks</option>
+                <option value="18">Minnesota Timberwolves</option>
+                <option value="19">New Orleans Pelicans</option>
+                <option value="20">New York Knicks</option>
+                <option value="21">Oklahoma City Thunder</option>
+                <option value="22">Orlando Magic</option>
+                <option value="23">Philadelphia 76ers</option>
+                <option value="24">Phoenix Suns</option>
+                <option value="25">Portland Trail Blazers</option>
+                <option value="26">Sacramento Kings</option>
+                <option value="27">San Antonio Spurs</option>
+                <option value="28">Toronto Raptors</option>
+                <option value="29">Utah Jazz</option>
+                <option value="30">Washington Wizards</option>
             </select>
-            <select name="jugadorPorPosicion" id="jugadorPorPosicion">                          <!--OPCIONES DESPLEGABLES JUGADOR POR POSICION-->
-                <option value="">Base</option>
-                <option value="">Escolta</option>
-                <option value="">Alero</option>
-                <option value="">Ala-pívot</option>
-                <option value="">Pívot</option>
+            <select name="jugadorPorPosicion" id="jugadorPorPosicion">
+                <option value="">Posiciones</option>                          <!--OPCIONES DESPLEGABLES JUGADOR POR POSICION-->
+                <option value="G">Base / Escolta (G) </option>
+                <option value="F">Alero/Ala-pívot (F)</option>
+                <option value="C">Pívot (C)</option>
             </select>
-            <input type="submit">
+            <input type="submit" id="btn-buscar" value="Buscar">
+            <li class="id-mvp"><a href="#MVP">MVPS</a></li>  
         </section>
-        <section class="jugadoresMvps">
+        
+        
+        <section id="contenedor-jugadores" class="jugadoresMvps">
+            </section>
+
+                        <h1 class="subtitulo-mvps"  id="MVP">ULTIMOS MVP'S</h1>
+
+        <section class="jugadoresMvps animar-oculto">
             <div class="jalenBrunson">
                     <article>
                         <img src="../assets/img/jalenBrunson Celebracion.jpg" alt="jalen brunson Knicks celebracion">
@@ -172,6 +180,9 @@
                 </a>
             </li>
         </ul>
-    </footer>   
+    </footer>
+    
+    <script src="../js/jugadores.js"></script>
+    <script src="../js/animaciones.js"></script>
 </body>
 </html>

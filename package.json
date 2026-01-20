@@ -17,5 +17,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass --watch ./scss/style.scss:./css/style.css"
+  },
+  "dependencies": {
+    "@balldontlie/sdk": "^1.2.2"
   }
 }

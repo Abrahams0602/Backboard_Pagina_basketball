@@ -34,27 +34,20 @@
         </nav>             
     </header>
     <main>
-        <section class="buscarEquipos">
-        <label for="equipos"></label>                                                 <!--BUSCAR EQUIPO-->
-        <input type="text" id="equipos" name="equipos" required placeholder= "Buscar un equipo...">
-        <select name="equiposConferencia" id="equiposConferencia">                   <!--OPCIONES DEPLEGABLES FILTRAR POR CONFERENCIA-->
-            <option value="">Conferencia Este</option>
-            <option value="">Conferencia Oeste</option>
-        </select>
-        <select name="equiposDivision" id="equiposDivision">                          <!--OPCIONES DESPLEGABLES FILTRAR POR DIVISION-->
-            <option value="">Division Atlántico</option>
-            <option value="">Division Central</option>
-            <option value="">Division Sudeste</option>
-            <option value="">Division Sudoeste</option>
-            <option value="">Division Noroeste</option>
-            <option value="">Division Pacífico</option>
-        </select>
-        <input type="submit"><li></li>
-    </section>
-    <section class="imagenEquipos">
-        <img src="../assets/img/TABLA.NBA-OESTE-1(new).png" alt="tabla conferencia oeste fondo blanco">
-        <img src="../assets/img/TABLA.NBA-CONFERENCIA ESTE.png" alt="Tabla conferencia este fondo blanco">
-    </section>
+        <section class="buscarEquipos animar-oculto">
+            <label for="equipos"></label>                                                 <!--BUSCAR EQUIPO-->
+            <input type="text" id="equipos" name="equipos" required placeholder= "Buscar un equipo...">
+            <select name="equiposConferencia" id="equiposConferencia">
+                <option value="">Todas las conferencias</option>                   <!--OPCIONES DEPLEGABLES FILTRAR POR CONFERENCIA-->
+                <option value="East">Conferencia Este</option>
+                <option value="West">Conferencia Oeste</option>
+            </select>
+            <input type="submit" id="btn-buscar-equipos" value="buscar"><li></li>
+        </section>
+
+            <section id="contenedor-equipos" class="EquiposNBA">
+                </section>
+
     </main>
     <footer> 
         <p id="elfinal"></p>
@@ -76,6 +69,8 @@
                 </a>
             </li>
         </ul>
-    </footer>   
+    </footer>
+    <script src="/js/equipos.js"></script>
+    <script src="/js/animaciones.js"></script>
 </body>
 </html>
